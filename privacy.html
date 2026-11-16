@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Privacy Policy</title>
+<meta name="description" content="How we collect, use and protect personal information, in plain language.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="assets/sox-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Back to home">
+      <img class="mark" src="assets/sox-icon.svg" alt="" width="28" height="28">
+      <span data-cfg="businessName">SOX Management</span>
+    </a>
+    <nav class="nav" aria-label="Main"><a class="btn btn-ghost" href="index.html">Back to site</a></nav>
+  </div>
+</header>
+
+<main class="legal">
+<div class="wrap"><article class="doc">
+  <p class="mono">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="upd">Last updated: 15 November 2026</p>
+
+  <h2>Who we are</h2>
+  <p><span data-cfg="businessName">SOX Management</span> (<span data-cfg="abn"></span>) provides quoting, invoicing and follow-up software for tradies. In this policy, "we" and "us" mean that business. You can contact us at <code data-cfg="email"></code>.</p>
+
+  <h2>What we collect</h2>
+  <p>From you, as our client:</p>
+  <ul>
+    <li>Your name, business name, email, phone and ABN.</li>
+    <li>Your logo, rates, job types and the wording you want in your documents.</li>
+    <li>Your login details for the app (your email and an encrypted password).</li>
+    <li>Records of our calls, messages and payments with you.</li>
+  </ul>
+  <p>On your behalf, when you use the app:</p>
+  <ul>
+    <li>Your quotes, invoices, jobs and enquiries. These include your customers' names, job descriptions and amounts. They may include contact details.</li>
+  </ul>
+  <p>We only collect what we need to do the work. We do not store your card details. Payments are handled by our payment provider.</p>
+
+  <h2>Why we use it</h2>
+  <ul>
+    <li>To build your templates and set up your systems.</li>
+    <li>To run the app, send the follow-up and reminder texts you set up, and show you your numbers.</li>
+    <li>To book calls, send invoices and give support.</li>
+    <li>To meet our legal and tax duties.</li>
+  </ul>
+  <p>We do not sell your information. We do not use your customers' details to market to them.</p>
+
+  <h2>Your customers' information</h2>
+  <p>Your customers' details belong to your business. We handle them only to run the app and send the messages you asked for. You are responsible for telling your customers that you keep their details and use a service like ours.</p>
+
+  <h2>Who we share it with</h2>
+  <p>We use trusted services to run the business. These may store or process information for us:</p>
+  <ul>
+    <li>A database and login provider (Supabase) to hold your app data.</li>
+    <li>A text message provider, to send the texts you set up.</li>
+    <li>An email provider, to send login and support emails.</li>
+    <li>A payment provider, to take your sign-up and monthly payments.</li>
+    <li>Website hosting, and email and call tools, to run the business.</li>
+  </ul>
+  <p>We only share what these services need to do their job. Some of them keep data in other countries. Where we can choose, we pick an Australian location for app data. We may also share information if the law requires it.</p>
+
+  <h2>How we keep it safe</h2>
+  <ul>
+    <li>Each client logs in with their own email and password and can only see their own records.</li>
+    <li>Data is sent over secure connections.</li>
+    <li>We limit who can see client information and keep our own accounts protected.</li>
+  </ul>
+  <p>No system is perfectly safe. If we learn of a breach that is likely to cause serious harm, we will tell the people affected and the Office of the Australian Information Commissioner, as the law requires.</p>
+
+  <h2>How long we keep it</h2>
+  <p>We keep your information while you are a client and for as long as the law requires us to keep business records. If you cancel, ask us and we will delete or return your app data, unless we have to keep some of it by law.</p>
+
+  <h2>Cookies and browser storage</h2>
+  <p>Our website does not use advertising cookies or tracking tools. The app uses your browser's storage to keep you logged in and remember your last tab. You can clear it at any time in your browser settings.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask to see the information we hold about you, ask us to correct it, or ask us to delete it. Email us and we will reply within 30 days. We may need to check who you are first.</p>
+
+  <h2>Complaints</h2>
+  <p>If you are unhappy with how we handled your information, tell us first at <code data-cfg="email"></code> and we will try to fix it. If you are still unhappy, you can contact the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">oaic.gov.au</a>.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. The date at the top shows when it last changed.</p>
+</article></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span data-cfg="businessName"></span> · <span data-cfg="abn"></span></p>
+    <div class="flinks"><a href="index.html">Home</a><a href="terms.html">Terms and conditions</a><a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script>
+(function () {
+  var C = window.NB_CONFIG || {};
+  document.querySelectorAll("[data-cfg]").forEach(function (el) { el.textContent = C[el.getAttribute("data-cfg")] || el.textContent; });
+})();
+</script>
+</body>
+</html>

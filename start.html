@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Get Started</title>
+<meta name="description" content="Pick a package and tell us about your business.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="assets/sox-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img class="mark" src="assets/sox-icon.svg" alt="" width="28" height="28"><span data-cfg="businessName">SOX Management</span></a>
+  <nav class="nav" aria-label="Main"><a class="btn btn-ghost" href="index.html">Back to site</a></nav>
+</div></header>
+<main class="start"><div class="wrap" style="max-width:820px">
+  <p class="mono">Get started</p>
+  <h1>Let's get your nights back</h1>
+  <p class="lede">Step 1: pick a package. Step 2: tell us about your business. Then payment, and you choose your own password.</p>
+  <div class="picks" id="picks">
+    <button type="button" class="pick" data-plan="basic" aria-pressed="false"><b>Basic</b><div class="pp">$199 + $19/month</div><span class="d">The app for your quotes and invoices. You send them yourself.</span></button>
+    <button type="button" class="pick" data-plan="elevate" aria-pressed="false"><b>Elevate</b><div class="pp">$399 + $49/month</div><span class="d">Everything in Basic. Approved quotes and invoices send themselves.</span></button>
+    <button type="button" class="pick" data-plan="premium" aria-pressed="false"><b>Premium</b><div class="pp">$599 + $99/month</div><span class="d">Everything in Elevate, plus follow-ups, reminders, review texts and the Command dashboard.</span></button>
+  </div>
+  <form class="form" id="form" novalidate>
+    <p class="sumline" id="sum">Pick a package above</p>
+    <div class="two">
+      <label class="f">Your name<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
+      <label class="f">Business name<input type="text" name="business" autocomplete="organization" required maxlength="160"></label>
+    </div>
+    <div class="two">
+      <label class="f">Email<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+      <label class="f">Mobile<input type="tel" name="mobile" autocomplete="tel" required maxlength="30"></label>
+    </div>
+    <div class="two">
+      <label class="f">ABN<input type="text" name="abn" inputmode="numeric" placeholder="11 digits" required maxlength="20"></label>
+      <label class="f">Your trade<select name="trade" required><option value="">Choose one</option><option>Electrician</option><option>Plumber</option><option>Builder</option><option>Arborist</option><option>Landscaper</option><option>Roofer</option><option>Painter</option><option>HVAC</option><option>Other</option></select></label>
+    </div>
+    <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="ticks">
+      <label><input type="checkbox" name="t1" required><span>I have read the <a href="terms.html" target="_blank" rel="noopener">terms and conditions</a> and <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+      <label><input type="checkbox" name="t2" required><span>There is no contract. I can cancel with 2 weeks' notice by email.</span></label>
+      <label><input type="checkbox" name="t3" required><span>I will check my quotes and invoices before they go out. I am responsible for what they say.</span></label>
+      <label><input type="checkbox" name="t4" required><span>I have the right to contact my customers by text and email about their quotes and invoices.</span></label>
+      <label><input type="checkbox" name="t5" required><span>Texts beyond my monthly allowance cost about 25 cents each.</span></label>
+      <label><input type="checkbox" name="t6" required><span>Prices are in Australian dollars with no GST at the moment.</span></label>
+    </div>
+    <div id="msg" role="status" aria-live="polite" hidden></div>
+    <button class="btn btn-primary" type="submit" id="go">Continue</button>
+  </form>
+</div></main>
+<footer><div class="wrap">
+  <p><span data-cfg="businessName"></span> · <span data-cfg="abn"></span></p>
+  <div class="flinks"><a href="index.html">Home</a><a href="terms.html">Terms and conditions</a><a href="privacy.html">Privacy</a></div>
+</div></footer>
+<script src="assets/config.js"></script>
+<script src="assets/start.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Terms and Conditions</title>
+<meta name="description" content="The main terms of using SOX Management.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="assets/sox-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Back to home">
+      <img class="mark" src="assets/sox-icon.svg" alt="" width="28" height="28">
+      <span data-cfg="businessName">SOX Management</span>
+    </a>
+    <nav class="nav" aria-label="Main"><a class="btn btn-ghost" href="index.html">Back to site</a></nav>
+  </div>
+</header>
+
+<main class="legal">
+<div class="wrap"><article class="doc">
+  <p class="mono">Legal</p>
+  <h1>Terms and conditions</h1>
+  <p class="upd">Last updated: 15 November 2026</p>
+  <div class="terms">
+    <div class="tc"><span class="n">1</span><div><h2>No contract</h2><p>Month to month. Cancel any time with 2 weeks' notice by email.</p></div></div>
+    <div class="tc"><span class="n">2</span><div><h2>Your information is yours</h2><p>We only use it to run your service. We never sell it, and other clients can't see it. Read the <a href="privacy.html">privacy policy</a>.</p></div></div>
+    <div class="tc"><span class="n">3</span><div><h2>You check before it goes out</h2><p>You approve your quotes and invoices, and you are responsible for what they say. You can pause the automatic sending at any time.</p></div></div>
+    <div class="tc"><span class="n">4</span><div><h2>Prices are shown before you pay</h2><p>Setup fee and monthly price are listed on the packages. Prices are in Australian dollars, with no GST for now. On Elevate and Premium, texts beyond your monthly allowance are 25 cents each.</p></div></div>
+  </div>
+  <p>SOX Management (<span data-cfg="abn"></span>). The full terms are available on request: <code data-cfg="email"></code>.</p>
+</article></div>
+</main>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span data-cfg="businessName"></span> · <span data-cfg="abn"></span></p>
+    <div class="flinks"><a href="index.html">Home</a><a href="terms.html">Terms and conditions</a><a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script>
+(function () {
+  var C = window.NB_CONFIG || {};
+  document.querySelectorAll("[data-cfg]").forEach(function (el) { el.textContent = C[el.getAttribute("data-cfg")] || el.textContent; });
+})();
+</script>
+</body>
+</html>
