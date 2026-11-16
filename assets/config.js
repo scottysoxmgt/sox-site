@@ -3,7 +3,7 @@ window.NB_CONFIG = {
   businessName: "SOX Management",
   email: "scott@soxmanagement.com",
   phone: "0426 621 310",
-  abn: "ABN to come",                     // replace
+  abn: "ABN 49 366 090 810",
   bookingUrl: "",                         // your Google Calendar / Calendly link (leave empty to hide)
   appUrl: "https://app.soxmanagement.com",   // where your tradie app lives (change after you buy the domain)
   // Public details only. The key is the PUBLIC one (sb_publishable_...). Never paste a secret key here.
